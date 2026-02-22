@@ -1,3 +1,4 @@
+
 /*  Find Duplicates in an Array */
 
 #include<iostream>
@@ -26,3 +27,4 @@ int main(){
         cout<<x<<" ";
     }
 }
+

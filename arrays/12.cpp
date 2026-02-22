@@ -23,3 +23,6 @@ int main(){
     int k = missingNumber(nums);
     cout<<" The missing number in the array is: "<<k;
 }
+
+
+ 
