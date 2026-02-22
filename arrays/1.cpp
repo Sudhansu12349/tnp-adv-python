@@ -1,69 +1,30 @@
-<<<<<<< HEAD
 /* Reverse an Array*/
 #include <iostream>
 using namespace std;
 
+void reverseArray(int arr[], int n) {
+    int start = 0;
+    int end = n - 1;
+
+    while (start < end) {
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+
+        start++;
+        end--;
+    }
+}
+
 int main() {
-    int n;
+    int arr[] = {1, 2, 3, 4, 5};
+    int n = 5;
 
-    cout << "Enter size of array: ";
-    cin >> n;
-    int arr[n];
-    cout << "Enter elements:\n";
-    for (int i = 0; i < n; i++) {
-        cin >> arr[i];
-    }
-    int left = 0;
-    int right = n - 1;
+    reverseArray(arr, n);
 
-    while (left < right) {
-        int temp = arr[left];
-        arr[left] = arr[right];
-        arr[right] = temp;
-
-        left++;
-        right--;
-    }
-
-    cout << "Reversed array:\n";
     for (int i = 0; i < n; i++) {
         cout << arr[i] << " ";
     }
 
     return 0;
 }
-=======
-/* Reverse an Array*/
-#include <iostream>
-using namespace std;
-
-int main() {
-    int n;
-
-    cout << "Enter size of array: ";
-    cin >> n;
-    int arr[n];
-    cout << "Enter elements:\n";
-    for (int i = 0; i < n; i++) {
-        cin >> arr[i];
-    }
-    int left = 0;
-    int right = n - 1;
-
-    while (left < right) {
-        int temp = arr[left];
-        arr[left] = arr[right];
-        arr[right] = temp;
-
-        left++;
-        right--;
-    }
-
-    cout << "Reversed array:\n";
-    for (int i = 0; i < n; i++) {
-        cout << arr[i] << " ";
-    }
-
-    return 0;
-}
->>>>>>> 11845d4c0139f6327aa404e31515031e4a110363
