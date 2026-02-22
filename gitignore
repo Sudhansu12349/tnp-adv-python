@@ -1,0 +1,31 @@
+# Executable files (Linux / Mac)
+*.out
+*.exe
+*.app
+
+# Object files
+*.o
+*.obj
+
+# Debug files
+*.dbg
+
+# VS Code generated files
+.vscode/
+
+# CMake files (if used)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Temporary files
+*.log
+*.tmp
+
+# Windows build files
+*.ilk
+*.pdb
+
+# macOS files
+.DS_Store
